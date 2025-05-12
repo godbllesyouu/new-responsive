@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+[class*="__container"] {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0px 1px 10px 0px #0000001A;
+    height: 100px;
+}
+
+.logo {
+    font-family: Work Sans;
+    font-weight: 600;
+    font-size: 39px;
+    line-height: 100%;
+}
+
+.logo h1 {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 124%;
+    letter-spacing: 0%;
+
+}
+
+.logo span {
+    color: #FF5300;
+}
+
+.menu {
+    display: flex;
+    gap: 29px;
+    align-items: center;
+}
+
+.menu a {
+    color: #373737;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    transition: 0.5s;
+}
+
+.menu a:hover {
+    color: #FF5300;
+}
+
+.menu button:hover {
+    opacity: 70%;
+}
+
+.menu button {
+    width: 135px;
+    height: 50px;
+    border: none;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.arev {
+    display: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#list {
+    display: none;
+}
+
+
+.list-1 {
+    width: 100%;
+    min-height: 600px;
+    background: #FFF7F4;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    margin-top: 73px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.title h4 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 73px;
+    width: 602px;
+    color: #373737;
+}
+
+.title p {
+    width: 586px;
+    color: #7B7B7B;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.title a {
+    display: flex;
+    width: 138px;
+    height: 30px;
+    background: #FF5300;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 4px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.imgs-1 {
+    display: flex;
+    align-items: center;
+    width: 639px;
+    height: 429px;
+}
+
+.imgs-1 img {
+    margin-top: 153px;
+}
+
+
+/* .program{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} */
+
+/* .title span {
+    color: #FF5300;
+} */
+
+@media (min-width:300px) and (max-width:767px) {
+    .menu {
+        display: none;
+    }
+
+    #list {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        gap: 50px;
+        margin: 0 auto;
+    }
+
+    header {
+        background: #fff;
+        width: 100%;
+        height: 50px;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo h1 {
+        font-family: sans-serif;
+        font-size: 25px;
+        line-height: 124%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .list-1 {
+        width: 100%;
+        display: flex;
+        height: 800px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+     .title{
+        margin: 0 auto;
+        display: flex;
+     }
+    .title h4 {
+        font-weight: 600px;
+        width: 300px;
+        font-size: 31px;
+        line-height: 124%;
+        text-align: center;
+
+    }
+    .title a{
+        margin: 0 auto;
+    }
+
+    .title p {
+        font-weight: 400px;
+        font-size: 16px;
+        line-height: 151%;
+        text-align: center;
+        width: 323px;
+        padding-left: 17px;
+        padding-right: 27px;
+
+    }
+
+    .imgs-1 img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 335px;
+        margin: 0 auto;
+        height: 225px;
+    }
+
+}
+
+@media (min-width:768px) and (max-width:1200px) {
+    .menu {
+        display: flex;
+        gap: 25px;
+    }
+
+    header {
+        box-shadow: 0px 1px 10px 0px #0000001A;
+    }
+
+    .menu a {
+        font-family: sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 151%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .arev {
+        display: flex;
+    }
+
+    .logo h1 {
+        font-family: Work Sans;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 124%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .menu button {
+        display: none;
+    }
+}
