@@ -341,16 +341,18 @@ a {
         margin-top: 90px;
         flex-direction: column;
     }
-    .title-txt a{
+
+    .title-txt a {
         margin: 0 auto;
     }
+
     .title-txt h4 {
         font-weight: 500px;
         font-size: 25px;
         line-height: 124%;
         text-align: center;
         width: 262px;
-        margin:  0 auto;
+        margin: 0 auto;
     }
 
     .title-txt p {
@@ -362,18 +364,20 @@ a {
         width: 323px;
     }
 
-    .title-txt button{
+    .title-txt button {
         margin: 0 auto;
     }
+
     .title-2 img {
         width: 372px;
         height: 192px;
     }
-    .cards{
+
+    .cards {
         display: flex;
         flex-direction: column;
         margin-top: 120px;
-        
+
     }
 
 
@@ -442,5 +446,38 @@ a {
     .imgs-1 img {
         width: 407px;
         height: 307px;
+    }
+
+    .title-2 img {
+        width: 372px;
+        height: 222px;
+    }
+
+    .title-txt h4 {
+        font-weight: 600px;
+        width: 329px;
+        font-size: 31px;
+        line-height: 124%;
+    }
+    .title-txt p {
+        font-weight: 400px;
+        margin: 0 auto;
+        display: flex;
+        font-size: 16px;
+        line-height: 151%;
+        width: 323px;
+    }
+    .cards{
+        display: flex;
+        gap: 5px;
+    }
+    .card{
+        height: 230px;
+        width: 180px;
+    }
+    .card p{
+        width: 150px;
+        font-size: 14px;
+        margin: 0 auto;
     }
 }
