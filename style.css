@@ -8,7 +8,6 @@
 [class*="__container"] {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 40px;
 }
 
 
@@ -94,6 +93,9 @@ a {
     min-height: 600px;
     background: #FFF7F4;
     display: flex;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -115,7 +117,7 @@ a {
 }
 
 .title p {
-    width: 586px;
+    width: 493px;
     color: #7B7B7B;
     font-family: Poppins;
     font-weight: 400;
@@ -136,6 +138,10 @@ a {
     line-height: 30px;
     border-radius: 4px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.title span {
+    color: #FF5300;
 }
 
 .imgs-1 {
@@ -202,10 +208,11 @@ a {
         flex-direction: column-reverse;
     }
 
-     .title{
+    .title {
         margin: 0 auto;
         display: flex;
-     }
+    }
+
     .title h4 {
         font-weight: 600px;
         width: 300px;
@@ -214,7 +221,8 @@ a {
         text-align: center;
 
     }
-    .title a{
+
+    .title a {
         margin: 0 auto;
     }
 
@@ -256,7 +264,6 @@ a {
         font-size: 16px;
         line-height: 151%;
         letter-spacing: 0%;
-        text-align: center;
     }
 
     .arev {
@@ -269,10 +276,39 @@ a {
         font-size: 20px;
         line-height: 124%;
         letter-spacing: 0%;
-        text-align: center;
     }
 
-    .menu button {
-        display: none;
+  
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 25px;
+    }
+    .imgs-1{
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+
+    .title h4 {
+        font-family: Work Sans;
+        font-weight: 600px;
+        font-size: 39px;
+        line-height: 124%;
+        width: 349px;
+    }
+
+    .title p {
+        font-family: Work Sans;
+        font-weight: 400px;
+        font-size: 16px;
+        line-height: 151%;
+        width: 332px;
+    }
+
+    .imgs-1 img {
+        width: 407px;
+        height: 307px;
     }
 }
