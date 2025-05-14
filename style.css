@@ -246,9 +246,9 @@ a {
 }
 
 .list-4 {
-    width: 100%;
     height: 800px;
-    background: #FFF7F4;
+    /* background: #FFF7F4; */
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,29 +259,30 @@ a {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    overflow: hidden;
     gap: 18px;
     width: 570px;
 }
 
 .title-4 span {
     color: #FF5300;
+    overflow: hidden;
 }
 
 .title-4 h3 {
     font-family: sans-serif;
+    overflow: hidden;
     width: 487px;
     font-weight: 600px;
     font-size: 39px;
-    line-height: 124%;
 }
 
 .title-4 p {
     width: 469px;
     font-family: sans-serif;
+    overflow: hidden;
     font-weight: 400px;
     font-size: 16px;
-    line-height: 151%;
-    letter-spacing: 0%;
     color: #7B7B7B;
 }
 
@@ -290,6 +291,7 @@ a {
     box-shadow: 4px 5px 15px 0px #FF530066;
     background: #FF5300;
     border: none;
+    overflow: hidden;
     border-radius: 6px;
     height: 50px;
 }
@@ -412,6 +414,47 @@ a {
 
 .card-5 img:hover {
     transform: scale(1.05);
+}
+
+
+.list-6 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+    height: 1500px;
+}
+
+.title-6 h2 {
+    font-family: sans-serif;
+    font-weight: 600px;
+    font-size: 39px;
+    line-height: 124%;
+    text-align: center;
+    width: 649px;
+}
+
+.title-6 span {
+    color: #FF5300;
+}
+
+.menu-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 43px;
+}
+
+.cards-6 {
+    display: flex;
+    margin-top: 60px;
+}
+
+.cards-7 {
+    display: flex;
 }
 
 /* .program{
@@ -586,7 +629,7 @@ a {
     .title-4 button {
         margin: 0 auto;
     }
-   
+
 
     .list-5 {
         overflow: hidden;
@@ -617,6 +660,45 @@ a {
         width: 286px;
         margin: 0 auto;
     }
+
+    .list-6 {
+        width: 100%;
+        height: 2600px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .title-6 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title-6 h2 {
+        font-size: 20px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .card-6 img {
+        width: 343px;
+        height: 370px;
+    }
+
+    .cards-6 {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .cards-7 {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
 
 }
 
@@ -773,11 +855,12 @@ a {
         margin: 0 auto;
     }
 
-    .cards-55{
+    .cards-55 {
         display: flex;
         flex-wrap: wrap;
     }
-        .card-5:hover {
+
+    .card-5:hover {
         margin-top: -20px;
         opacity: 100%;
     }
