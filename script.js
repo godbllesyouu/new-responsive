@@ -1,15 +1,20 @@
-let currentIndex = 0;
-const slider = document.querySelector('.cards-5');
-const totalCards = document.querySelectorAll('.card-5').length;
+const toggle = document.getElementById("toggleMode")
 
-function slideCard(direction) {
-  currentIndex += direction;
-
-  if (currentIndex < 0) {
-    currentIndex = totalCards - 1;
-  } else if (currentIndex >= totalCards) {
-    currentIndex = 0;
-  }
-
-  slider.style.transform = translateX(-${currentIndex * 100}%);
-}   
+if(localStorage.getItem('theme')==="dark"){
+  document.body.classList.add("dark-mode")
+  toggle.classList.remove("fa-sun")
+  toggle.classList.add("fa-moon")
+}
+toggle.addEventListener("click", () =>{
+  document.body.classList.toggle("dark-mode")
+  if(document.body.classList.contains("dark-mode")
+  ){  
+    localStorage.setItem("theme", "dark")
+    toggle.classList.remove("fa-sun")
+    toggle.classList.add("fa-moon")
+  } else{
+    localStorage.setItem("theme", 'light')
+    toggle.classList.remove("fa-moon")
+    toggle.classList.add("fa-sun")
+  } 
+})
